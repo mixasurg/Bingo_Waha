@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="header">
+            <div class="header-line">
+                <div class="header-logo">
+                    <img src="../images/waha.png" alt="">
+                </div>
+                <p id="bingo"> WARHAMMER БИНГО </p>
+            </div>
+            <div class="name">
+                <label for="username">Ник участника:</label> 
+                <select name="username" id="username"> 
+                    <option value="Mixas">Mixas</option> 
+                    <option value="Priest">Priest</option> 
+                    <option value="Legatus">Legatus</option> 
+                </select>
+                <label class="fraction">Армия участника:</label>
+                <label id="fraction">ТУТ БУДЕТ АРМИ НЕЙМ БЛЭТ</label>
+            </div>
+        </div>
+        <table class="table"> 
+            <tr>
+                <td>
+                    <img class="quest" id="quest11" src="../images/quest11.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest12" src="../images/quest12.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest13" src="../images/quest13.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest14" src="../images/quest14.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest15" src="../images/quest15.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest16" src="../images/quest16.png" alt="" onclick="showPopup()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="quest" id="quest21" src="../images/quest21.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest22" src="../images/quest22.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest23" src="../images/quest23.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest24" src="../images/quest24.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest25" src="../images/quest25.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest26" src="../images/quest26.png" alt="" onclick="showPopup()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="quest" id="quest31" src="../images/quest31.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest32" src="../images/quest32.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest33" src="../images/quest33.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest34" src="../images/quest34.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest35" src="../images/quest35.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest36" src="../images/quest36.png" alt="" onclick="showPopup()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="quest" id="quest41" src="../images/quest41.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest42" src="../images/quest42.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest43" src="../images/quest43.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest44" src="../images/quest44.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest45" src="../images/quest45.png" alt="" onclick="showPopup()">
+                </td>
+                <td>
+                    <img class="quest" id="quest46" src="../images/quest46.png" alt="" onclick="showPopup()">
+                </td>
+            </tr>
+        </table>
+        <div id="popup-overlay">
+        <div id="popup">
+            <h2>Добавь фото до и после, чтобы подтвердить выполнение</h2>
+            <input type="file" id="photo1">
+            <input type="file" id="photo2">
+            <div class="popup-buttons">
+                <button onclick="confirmAction()">Подтвердить</button>
+                <button onclick="closePopup()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showPopup() {
+        // Получаем ссылки на элементы всплывающего окна
+        var popupOverlay = document.getElementById("popup-overlay");
+        var popup = document.getElementById("popup");
+
+        // Отображаем всплывающее окно
+        popupOverlay.style.display = "block";
+    }
+    function confirmAction() {
+            closePopup();
+        }
+
+        function closePopup() {
+            var popupOverlay = document.getElementById("popup-overlay");
+            popupOverlay.style.display = "none";
+        }
+</script>
+
+</html>

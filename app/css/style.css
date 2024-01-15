@@ -1,0 +1,89 @@
+body {
+    background: url(../images/Back.png) repeat-x;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.header-logo {
+    text-align: center;
+}
+#bingo {
+    text-align: center;
+    font-size: 53px;
+}
+.name {
+    text-align: left;
+    margin-left: 600px;
+    font-size: 26px;
+}
+.fraction {
+    margin-left: 150px;
+}
+
+#username {
+    font-size: 23px;
+    background-color: unset;
+    height: 42px;
+    width: 414px;
+}
+#fraction {
+    font-size: 23px;
+    background-color: unset;
+    border: 3px #a2a09c solid;
+}
+#quest11 {
+    margin-left: 0px;
+}
+#quest21 {
+    margin-left: 0px;
+}
+#quest31 {
+    margin-left: 0px;
+}
+#quest41 {
+    margin-left: 0px;
+}
+.quest {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 26px;
+    background-color: unset;
+}
+.table {
+    margin-left: 600px;
+}
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет */
+    display: none; /* По умолчанию скрыто */
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
